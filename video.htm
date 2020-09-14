@@ -11,7 +11,7 @@
 
 <body>
 <h1>Video Embed</h1>
-<div id="<player div ID>"></div>
+<div id="okayplayer"></div>
 <script type="text/javascript">
   var options = {
     width: 1920,
@@ -21,8 +21,17 @@
     // only needed if your site is also embedded on embed.example.com and othersite.example.com 
     parent: ["mdmodica.github.io", "othersite.example.com"]
   };
-  var player = new Twitch.Player("<player div ID>", options);
+  var player = new Twitch.Player("okayplayer", options);
   player.setVolume(0.5);
+
+  <iframe
+    src="https://player.twitch.tv/?collection=tWhOsgfxFBaw7g&parent=mdmodica.github.io"
+    height="720"
+    width="1280"
+    frameborder="0"
+    scrolling="no"
+    allowfullscreen="true">
+</iframe>
 </script>
 </body>
 
